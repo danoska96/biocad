@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+	<div class="contain">
+		<div class="filter-devices">
+			<div class="filter-devices__title">
+				Enter inventory number, guid or bims id		
+			</div>
+			<div class="filter-devices__search">
+				<form action="">
+					<input type="text" list="character" placeholder='A-001234' id="input1" required>
+					<datalist id="character">
+						<option value="A-001234"></option>
+						<option value="A-0012345"></option>
+						<option value="A-00123456"></option>
+					</datalist>
+					<input type="submit" id="submit1" value="Search" disabled>
+
+				</form>
+			</div>
+		</div>
+
+		<div class="break"></div>
+		
+		<div class="column">
+			<div class="unit-name">
+				<object type="image/svg+xml" data="icon.svg" width="39.7px" height="40px" >
+					Your browser does not support SVG
+				</object>
+				<div class="unit-name__text">
+					Аналитические весы OHAUS Adventurer АХ324
+					(B715976163)
+				</div>
+				<div class="unit-name__info"><a href="">i</a></div>
+			</div>
+
+			<div class="report-filters">
+				<form action="" id="form2" onsubmit="return false;">
+					<input type="text" list="month" placeholder='1 month' id="input2" required>
+					<datalist id="month" >
+						<option value="1 month"></option>
+						<option value="2 month"></option>
+						<option value="3 month"></option>
+					</datalist>
+					<div class="radio">
+						<input id="radio1" name="radio" type="radio" value="Calibration">
+						<label for="radio1">Calibration</label>
+					</div>
+					<div class="radio">
+						<input id="radio2" name="radio" type="radio" value="Measuring">
+						<label for="radio2">Measuring</label>
+					</div>
+					<div class="radio">
+						<input id="radio3" name="radio" type="radio" value="Using">
+						<label for="radio3">Using</label>
+					</div>
+					<input type="submit" value="Generate report" id="submit2" disabled >
+					<input type="button" value="Save pdf" id="submit2">
+				</form>
+			</div>
+			<div class="device-info">
+				<div class="inner">
+					<div class="text">Тип оборудования: <b>Весы</b></div>
+					<div class="text">Статус: <b>Готов к работе</b></div>
+					<div class="text">Изготовитель: <b>Ohaus</b></div>
+					<div class="text">Модель: <b>AX-123</b></div>
+					<div class="text">Ответственное подразделение (ремонт): <b>Группа обслуживания лабораторного оборудования</b></div>
+					<div class="text">Эксплуатирующее подразделение: <b>Химико-аналитическая лаборатория 2.0</b></div>
+					<div class="text">МОЛ: <b>Иванов Иван Иванович</b></div>
+					<div class="text">Территория: <b>г. Санкт-Петербург (Нойдорф)</b></div>
+					<div class="text">Серийный номер: <b>B715976163</b></div>
+					<div class="text">GUID: <a href="#">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</a></div>
+					<div class="text">Bims ID: <a href="#">49db8db1-585f-4b9e-bbf0-8a59698edc8b</a></div>
+					<div class="text">Tam: <a href="#">А-001234</a></div>
+				</div>
+			</div>	
+		</div>
+		
+		<div class="report">
+			<div class="inner">
+				<div class="title">Calibration report</div>
+				<div class="names">
+					<div class="item1">Data</div>
+					<div class="item2">Used buffer solutions</div>
+					<div class="item3">Slope, %<br>
+						Norm
+					95-105</div>
+					<div class="item4">Offset, mV<br>Norm ±(0-20)</div>
+					<div class="item5">User</div>
+				</div>
+				<div class="row">
+					<div class="item1">04.10.19<br>10:23</div>
+					<div class="item2">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+					<div class="item3">98.7</div>
+					<div class="item4">-0.3</div>
+					<div class="item5">Иванов Генадий Петрович</div>
+				</div>
+				<div class="row">
+					<div class="item1">04.10.19<br>10:23</div>
+					<div class="item2">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+					<div class="item3">98.7</div>
+					<div class="item4">-0.3</div>
+					<div class="item5">Иванов Генадий Петрович</div>
+				</div>
+				<div class="row">
+					<div class="item1">04.10.19<br>10:23</div>
+					<div class="item2">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+					<div class="item3">98.7</div>
+					<div class="item4">-0.3</div>
+					<div class="item5">Иванов Генадий Петрович</div>
+				</div>
+				<div class="row">
+					<div class="item1">04.10.19<br>10:23</div>
+					<div class="item2">В1: № 2000460789536: pH 1.09<br>В2: № 2000460789536: pH 2.00<br>В3: № 2000460789536: pH 4.01<br>В4: № 2000460789536: pH 7.00<br>В5: № 2000460789536: pH 9.21</div>
+					<div class="item3 cross">98.7</div>
+					<div class="item4">-0.3</div>
+					<div class="item5">Иванов Генадий Петрович</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<script src="script.js"></script>
+</body>
+</html>
